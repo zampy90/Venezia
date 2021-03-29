@@ -31,7 +31,8 @@
         <script src="js/labelgun.min.js"></script>
         <script src="js/labels.js"></script>
         <script src="data/Luoghi_1.js"></script>
-	<script src="js/jquery-3.5.1.js"></script>
+		<script src="js/jquery-3.5.1.js"></script>
+
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
@@ -66,9 +67,9 @@
 						+'<button class="btn1" onClick="clickBtnPhoto(\''+String(feature.properties['img1']).replace(/[\\\/:]/g, '_').trim()+'\')">Photo 1</button>&nbsp;'
 						+'<button class="btn2" onClick="clickBtnPhoto(\''+String(feature.properties['img2']).replace(/[\\\/:]/g, '_').trim()+'\')">Photo 2</button>&nbsp;'
 						+'<button class="btn3" onClick="clickBtnPhoto(\''+String(feature.properties['img3']).replace(/[\\\/:]/g, '_').trim()+'\')">Photo 3</button>'
-						+'</div>'; 	
+						+'</div>'; 
+								}					
 						'</td>\
-						}
                     </tr>\
                 </table>';
 				
