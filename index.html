@@ -57,7 +57,7 @@
         });
         layer_OSMStandard_0;
         map.addLayer(layer_OSMStandard_0);
-        function pop_Luoghi_1(feature, layer) {
+        function pop_Luoghi_1(feature, layer) {{
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">'+'<div><img class="myphoto" img src="images/'+String(feature.properties['img2']).replace(/[\\\/:]/g, '_').trim()+'" /></div>'
@@ -74,9 +74,11 @@
 						'</td>\
                     </tr>\
                 </table>';
+				
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
-            			function clickBtnPhoto(photo){
+
+			function clickBtnPhoto(photo){
 					  //console.log('click btn1 aaa')
 					  //console.log(photo)
 					  $('.myphoto').attr('img src','images/'+photo);
